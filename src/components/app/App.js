@@ -21,7 +21,7 @@ const App = () => {
               <TransitionGroup component="div">
                 <Routes >
                       <Route exact path="/Orders" element={ <OrdersList /> } />
-                      <Route exact path="/Products" element={ <ProductsList /> } />
+                      <Route exact path='/Products' element={ <ProductsList /> } />
                 </Routes>
               </TransitionGroup>
             </div>
