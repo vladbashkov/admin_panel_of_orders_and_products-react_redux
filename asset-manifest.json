@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/admin_panel_of_orders_and_products-react_redux/static/css/main.bd399794.css",
-    "main.js": "/admin_panel_of_orders_and_products-react_redux/static/js/main.28faa9e0.js",
+    "main.js": "/admin_panel_of_orders_and_products-react_redux/static/js/main.b50f5231.js",
     "static/css/353.a78d26ed.chunk.css": "/admin_panel_of_orders_and_products-react_redux/static/css/353.a78d26ed.chunk.css",
-    "static/js/353.657b9ddb.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/353.657b9ddb.chunk.js",
+    "static/js/353.d507f90f.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/353.d507f90f.chunk.js",
     "static/css/483.e4e26b74.chunk.css": "/admin_panel_of_orders_and_products-react_redux/static/css/483.e4e26b74.chunk.css",
-    "static/js/483.4fc0e044.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/483.4fc0e044.chunk.js",
-    "static/js/197.392481cb.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/197.392481cb.chunk.js",
-    "static/js/150.a3317cb0.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/150.a3317cb0.chunk.js",
-    "static/js/938.ab508af7.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/938.ab508af7.chunk.js",
-    "static/js/564.09e8971c.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/564.09e8971c.chunk.js",
+    "static/js/483.f7f0f1d5.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/483.f7f0f1d5.chunk.js",
+    "static/js/197.3293b0c9.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/197.3293b0c9.chunk.js",
+    "static/js/150.ae115131.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/150.ae115131.chunk.js",
+    "static/js/938.ed4601a7.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/938.ed4601a7.chunk.js",
+    "static/js/564.2efe30cf.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/564.2efe30cf.chunk.js",
     "static/media/4172960.jpg": "/admin_panel_of_orders_and_products-react_redux/static/media/4172960.fbd8d72590659449ba52.jpg",
     "index.html": "/admin_panel_of_orders_and_products-react_redux/index.html",
     "main.bd399794.css.map": "/admin_panel_of_orders_and_products-react_redux/static/css/main.bd399794.css.map",
-    "main.28faa9e0.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/main.28faa9e0.js.map",
+    "main.b50f5231.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/main.b50f5231.js.map",
     "353.a78d26ed.chunk.css.map": "/admin_panel_of_orders_and_products-react_redux/static/css/353.a78d26ed.chunk.css.map",
-    "353.657b9ddb.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/353.657b9ddb.chunk.js.map",
+    "353.d507f90f.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/353.d507f90f.chunk.js.map",
     "483.e4e26b74.chunk.css.map": "/admin_panel_of_orders_and_products-react_redux/static/css/483.e4e26b74.chunk.css.map",
-    "483.4fc0e044.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/483.4fc0e044.chunk.js.map",
-    "197.392481cb.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/197.392481cb.chunk.js.map",
-    "150.a3317cb0.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/150.a3317cb0.chunk.js.map",
-    "938.ab508af7.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/938.ab508af7.chunk.js.map",
-    "564.09e8971c.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/564.09e8971c.chunk.js.map"
+    "483.f7f0f1d5.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/483.f7f0f1d5.chunk.js.map",
+    "197.3293b0c9.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/197.3293b0c9.chunk.js.map",
+    "150.ae115131.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/150.ae115131.chunk.js.map",
+    "938.ed4601a7.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/938.ed4601a7.chunk.js.map",
+    "564.2efe30cf.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/564.2efe30cf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd399794.css",
-    "static/js/main.28faa9e0.js"
+    "static/js/main.b50f5231.js"
   ]
 }
