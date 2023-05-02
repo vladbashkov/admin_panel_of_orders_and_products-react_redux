@@ -21,7 +21,7 @@ const App = () => {
               <TransitionGroup component="div">
                 <Routes >
                       <Route exact path="/admin_panel_of_orders_and_products-react_redux/Orders" element={ <OrdersList /> } />
-                      <Route exact path='/admin_panel_of_orders_and_products-react_redux/Products' element={ <ProductsList /> } />
+                      <Route exact path="/admin_panel_of_orders_and_products-react_redux/Products" element={ <ProductsList /> } />
                 </Routes>
               </TransitionGroup>
             </div>
