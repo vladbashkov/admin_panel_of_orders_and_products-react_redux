@@ -1,7 +1,7 @@
 {
   "name": "admin_panel_of_orders_and_products-react_redux",
   "version": "0.1.0",
-  "homepage": "https://vladbashkov.github.io/admin_panel_of_orders_and_products-react_redux",
+  "homepage": "https://vladbashkov.github.io/admin_panel_of_orders_and_products-react_redux/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
