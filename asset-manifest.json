@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/admin_panel_of_orders_and_products-react_redux/static/css/main.bd399794.css",
-    "main.js": "/admin_panel_of_orders_and_products-react_redux/static/js/main.a271c7d0.js",
+    "main.js": "/admin_panel_of_orders_and_products-react_redux/static/js/main.28faa9e0.js",
     "static/css/353.a78d26ed.chunk.css": "/admin_panel_of_orders_and_products-react_redux/static/css/353.a78d26ed.chunk.css",
     "static/js/353.657b9ddb.chunk.js": "/admin_panel_of_orders_and_products-react_redux/static/js/353.657b9ddb.chunk.js",
     "static/css/483.e4e26b74.chunk.css": "/admin_panel_of_orders_and_products-react_redux/static/css/483.e4e26b74.chunk.css",
@@ -13,7 +13,7 @@
     "static/media/4172960.jpg": "/admin_panel_of_orders_and_products-react_redux/static/media/4172960.fbd8d72590659449ba52.jpg",
     "index.html": "/admin_panel_of_orders_and_products-react_redux/index.html",
     "main.bd399794.css.map": "/admin_panel_of_orders_and_products-react_redux/static/css/main.bd399794.css.map",
-    "main.a271c7d0.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/main.a271c7d0.js.map",
+    "main.28faa9e0.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/main.28faa9e0.js.map",
     "353.a78d26ed.chunk.css.map": "/admin_panel_of_orders_and_products-react_redux/static/css/353.a78d26ed.chunk.css.map",
     "353.657b9ddb.chunk.js.map": "/admin_panel_of_orders_and_products-react_redux/static/js/353.657b9ddb.chunk.js.map",
     "483.e4e26b74.chunk.css.map": "/admin_panel_of_orders_and_products-react_redux/static/css/483.e4e26b74.chunk.css.map",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.bd399794.css",
-    "static/js/main.a271c7d0.js"
+    "static/js/main.28faa9e0.js"
   ]
 }
