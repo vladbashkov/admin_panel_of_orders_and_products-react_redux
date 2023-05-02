@@ -20,8 +20,8 @@ const App = () => {
             <div className="App-content p-5 w-100">
               <TransitionGroup component="div">
                 <Routes >
-                      <Route exact path="https://vladbashkov.github.io/admin_panel_of_orders_and_products-react_redux/Orders" element={ <OrdersList /> } />
-                      <Route exact path="https://vladbashkov.github.io/admin_panel_of_orders_and_products-react_redux/Products" element={ <ProductsList /> } />
+                      <Route exact path="/Orders" element={ <OrdersList /> } />
+                      <Route exact path="/Products" element={ <ProductsList /> } />
                 </Routes>
               </TransitionGroup>
             </div>
