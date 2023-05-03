@@ -1,6 +1,5 @@
 {
-  "orders": [
-    {
+  "orders": [{
       "id": 1,
       "title": "Order 1",
       "date": "2017-06-29 12:09:33",
@@ -47,28 +46,9 @@
       "title": "Order 7",
       "date": "2023-05-02 20:50:47",
       "description": "desc"
-    },
-    {
-      "id": "eddc03ac-ac10-459e-bea3-af7f08d5fec4",
-      "title": "  ",
-      "date": "2023-05-03 11:09:55",
-      "description": ""
-    },
-    {
-      "id": "64a78b2b-a316-45fd-badc-f633cc796498",
-      "title": " ",
-      "date": "2023-05-03 11:20:56",
-      "description": " "
-    },
-    {
-      "id": "ae50abcb-083f-4646-8eaf-b15b8eebc15c",
-      "title": "ffdfd erer",
-      "date": "2023-05-03 11:23:37",
-      "description": "   dfdfdf"
     }
   ],
-  "products": [
-    {
+  "products": [{
       "id": 1,
       "serialNumber": 1234,
       "isNew": "new",
@@ -80,8 +60,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -107,8 +86,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -134,8 +112,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -161,8 +138,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -188,8 +164,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -215,8 +190,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -242,8 +216,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -269,8 +242,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -296,8 +268,7 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
+      "price": [{
           "value": 100,
           "symbol": "USD",
           "isDefault": 0
@@ -323,18 +294,15 @@
         "start": "2017-06-29 12:09:33",
         "end": "2017-06-29 12:09:33"
       },
-      "price": [
-        {
-          "value": "200",
-          "symbol": "USD",
-          "isDefault": false
-        }
-      ],
+      "price": [{
+        "value": "200",
+        "symbol": "USD",
+        "isDefault": false
+      }],
       "date": "2023-05-02 17:21:27"
     }
   ],
-  "filters": [
-    {
+  "filters": [{
       "name": "all",
       "label": "All",
       "className": "btn-outline-dark"
