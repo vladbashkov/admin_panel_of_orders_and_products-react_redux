@@ -2,6 +2,7 @@ import {useHttp} from '../../hooks/http.hook';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import { useForm } from "react-hook-form";
 
 import { productCreated } from '../productsList/ProductsSlice';
 import useDate from "../../hooks/useDate";
@@ -21,9 +22,10 @@ const AddProductForm = () => {
     const dispatch = useDispatch();
     const {request} = useHttp();
     const date = useDate(true);
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmitHandler = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         const newItem = {
             id: uuidv4(),
@@ -100,7 +102,7 @@ const AddProductForm = () => {
             e.target.checked = checked;
             list[index][name] = checked;
         } else {
-            list[index][name] = value;
+            list[index][name] = value.trimLeft();
         }
         setPriceList(list);
     };
@@ -117,117 +119,160 @@ const AddProductForm = () => {
     };
 
     return (
-        <form className="border p-4 shadow-lg rounded mb-4" onSubmit={onSubmitHandler}>
+        <form className="border p-4 shadow-lg rounded mb-4" onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="mb-3">
                 <label htmlFor="serialNumber" className="form-label fs-4">Serial Number</label>
                 <input 
-                    required
                     type="text" 
-                    name="serialNumber" 
+                    // name="serialNumber" 
+                    {...register("serialNumber", { required: true })}
                     className="form-control" 
                     id="serialNumber" 
                     placeholder="Serial Number"
                     value={serialNumber}
-                    onChange={(e) => setserialNumber(e.target.value)}/>
+                    onChange={(e) => setserialNumber(e.target.value.trimLeft())}/>
+                { errors.serialNumber && <p className="text-danger my-2">This field is required</p> }
             </div>
             <div className="mb-3">
                 <label htmlFor="isNew" className="form-label">Product Usage</label>
                 <select 
-                    required
                     className="form-select" 
                     id="isNew" 
-                    name="isNew"
+                    // name="isNew"
+                    {...register("isNew", { required: true })}
                     value={isNew}
                     onChange={(e) => setIsNew(e.target.value)}>
                     <option value="">Usage</option>
                     { renderFilters(filters, filtersLoadingStatus) }
                 </select>
+                { errors.isNew && <p className="text-danger my-2">This field is required</p> }
             </div>
             <div className="mb-3">
                 <label htmlFor="title" className="form-label fs-4">Product Title</label>
                 <input 
-                    required
                     type="text" 
-                    name="title" 
+                    // name="title" 
+                    {...register("title", { required: true })}
                     className="form-control" 
                     id="title" 
                     placeholder="Product Title"
                     value={title}
-                    onChange={(e) => setTitle(e.target.value)}/>
+                    onChange={(e) => setTitle(e.target.value.trimLeft())}/>
+                { errors.title && <p className="text-danger my-2">This field is required</p> }
             </div>
             <div className="mb-3">
                 <label htmlFor="type" className="form-label fs-4">Product Type</label>
                 <input 
-                    required
                     type="text" 
-                    name="type" 
+                    // name="type" 
+                    {...register("type", { required: true })}
                     className="form-control" 
                     id="type" 
                     placeholder="Product Type"
                     value={type}
-                    onChange={(e) => setType(e.target.value)}/>
+                    onChange={(e) => setType(e.target.value.trimLeft())}/>
+                { errors.type && <p className="text-danger my-2">This field is required</p> }
             </div>
             <div className="mb-3">
                 <label htmlFor="specification" className="form-label fs-4">Product specification</label>
                 <input 
-                    required
                     type="text" 
-                    name="specification" 
+                    // name="specification" 
+                    {...register("specification", { required: true })}
                     className="form-control" 
                     id="specification" 
                     placeholder="Product specification"
                     value={specification}
-                    onChange={(e) => setSpecification(e.target.value)}/>
+                    onChange={(e) => setSpecification(e.target.value.trimLeft())}/>
+                { errors.specification && <p className="text-danger my-2">This field is required</p> }
             </div>
             <div className="mb-3">
                 <label htmlFor="guarStart" className="form-label fs-4">Product Guarantee Start</label>
                 <input 
-                    required
                     type="text" 
-                    name="guarStart" 
+                    // name="guarStart" 
+                    {...register("guarStart", { required: true })}
                     className="form-control" 
                     id="guarStart" 
                     placeholder="Product Guarantee"
                     value={guarStart}
-                    onChange={(e) => setGuarStart(e.target.value)}/>
+                    onChange={(e) => setGuarStart(e.target.value.trimLeft())}/>
+                { errors.guarStart && <p className="text-danger my-2">This field is required</p> }
                 <label htmlFor="guarEnd" className="form-label fs-4">Product Guarantee End</label>
                 <input 
-                    required
                     type="text" 
-                    name="guarEnd" 
+                    // name="guarEnd" 
+                    {...register("guarEnd", { required: true })}
                     className="form-control" 
                     id="guarEnd" 
                     placeholder="Product Guarantee"
                     value={guarEnd}
-                    onChange={(e) => setGuarEnd(e.target.value)}/>
+                    onChange={(e) => setGuarEnd(e.target.value.trimLeft())}/>
+                { errors.guarEnd && <p className="text-danger my-2">This field is required</p> }
             </div>
             <div className="mb-3">
                 <h3 className='fs-4'>Product Price</h3>
                 {
                     priceList.map((price, index) => {
+
                         return (
                             <div className="prices-container" key={`key${index}`}>
                                 <div className="border rounded p-4 mb-3">
-                                    <input 
-                                        required
-                                        type="text" 
-                                        key={index}
-                                        name="value" 
-                                        className="form-control mb-2" 
-                                        id={ price.value } 
-                                        placeholder="Price"
-                                        value={ price.value }
-                                        onChange={(e) => handlePriceChange(e, index)}/>
-                                    <input 
-                                        required
-                                        type="text" 
-                                        key={index+1}
-                                        name="symbol" 
-                                        className="form-control mb-2" 
-                                        id={ price.symbol }
-                                        placeholder="Currency"
-                                        value={ price.symbol }
-                                        onChange={(e) => handlePriceChange(e, index)}/>
+                                    {
+                                        priceList.length !== 1 && (
+                                            <div className="input-group">
+                                                <input 
+                                                    type="text" 
+                                                    key={index}
+                                                    name="value" 
+                                                    className="form-control mb-2" 
+                                                    id={ price.value } 
+                                                    placeholder="Price"
+                                                    value={ price.value.replace(/\D/, '') }
+                                                    onChange={(e) => handlePriceChange(e, index)}/>
+                                                <input 
+                                                    type="text" 
+                                                    key={index+1}
+                                                    name="symbol" 
+                                                    className="form-control mb-2" 
+                                                    id={ price.symbol }
+                                                    placeholder="Currency"
+                                                    value={ price.symbol }
+                                                    onChange={(e) => handlePriceChange(e, index)}/>
+                                            </div>
+                                        )
+                                    }
+
+                                    {
+                                        priceList.length === 1 && (
+                                            <div className={`input-group ${errors.value || errors.symbol ? 'd-flex' : ''}`}>
+                                                <input 
+                                                    type="text" 
+                                                    key={index}
+                                                    // name="value" 
+                                                    {...register("value", { required: true })}
+                                                    className="form-control mb-2" 
+                                                    id={ price.value } 
+                                                    placeholder="Price"
+                                                    value={ price.value.replace(/\D/, '') }
+                                                    onChange={(e) => handlePriceChange(e, index)}/>
+                                                { errors.value && <p className="text-danger mx-2 my-2">This field is required</p> }
+                                                <input 
+                                                    type="text" 
+                                                    key={index+1}
+                                                    // name="symbol" 
+                                                    {...register("symbol", { required: true })}
+                                                    className="form-control mb-2" 
+                                                    id={ price.symbol }
+                                                    placeholder="Currency"
+                                                    value={ price.symbol }
+                                                    onChange={(e) => handlePriceChange(e, index)}/>
+                                                { errors.symbol && <p className="text-danger mx-2 my-2">This field is required</p> }
+                                            </div>
+                                        )
+                                    }
+                                    
+                                    
                                     <div 
                                         className="form-check form-switch"
                                     >
@@ -266,7 +311,6 @@ const AddProductForm = () => {
                                         </button>
                                     )
                                 }
-                                
                             </div>
                         )
                     })
